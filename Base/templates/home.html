@@ -1,0 +1,213 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Rakibul Hoda Labib</h1>
+                <h4 class="poppinss">Software Engineer</h4>
+                <a href="{% static 'pdf/cv.pdf' %}"  target="_blank">
+                    <button class="btn poppins">Resume</button></a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+               
+                <img src="{% static 'images/my pic.png'%}" alt="" style="width: 120%;">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2"></h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/my pic4.jpg'%}" alt="" style="width: 40%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content"><br><br><br><br><br><br>
+                    <h1 class="t-white m-b-1 poppins">Welcome</h1>
+                    <p class="t-white poppins">This is my portfolio website. You can know some information about me from this website. Thanks for your patience. Have a nice day.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Programming Skills</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/coding.jpeg'%}" alt="">
+        </div>
+
+      <div class="skills-right flex items-center">
+            <div class="skillss-container" style="color: white;">
+                <ul class="skills__list">
+                    <li class="skills__item">JavaScript</li>
+                    <li class="skills__item">Java</li>
+                    <li class="skills__item">C++</li>
+                    <li class="skills__item">C</li>
+                    <li class="skills__item">Python</li>
+                    <li class="skills__item">HTML</li>
+                    <li class="skills__item">CSS</li>
+                    <li class="skills__item">PHP</li>
+                    <li class="skills__item">Prolog</li>
+                    <li class="skills__item">CNN</li>
+                    <li class="skills__item">TensorFlow</li>
+                    <li class="skills__item">Bootstrap</li>
+                </ul>      
+            </div> 
+
+            
+                
+            
+        </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
+        <div class="project__container bd-grid" style="color: white;">
+            <ul>
+                <li>
+                    Portfolio (HTML, CSS, JS)
+                    <br>
+                    <a href="https://github.com/labib10849/My-Portfolio" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Food Restaurant Website (HTML, CSS, JS, PHP, BOOTSTRAP, MySQL, XAMPP)
+                    <br>
+                    <a href="https://github.com/labib10849/Food-Resturant-Website" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Money Scanner Android App using AI
+                    <br>
+                    <a href="https://github.com/labib10849/Money-Scanner-Android-App-using-AI" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Pizza Shop POS
+                    <br>
+                    <a href="https://github.com/labib10849/Pizza-Shop-POS" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Inventory Management System
+                    <br>
+                    <a href="https://github.com/labib10849/Inventory-Management-System" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Super Shop POS
+                    <br>
+                    <a href="https://github.com/labib10849/Super-Shop-POS" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Hotel Management System
+                    <br>
+                    <a href="https://github.com/labib10849/Hotel-Management-System" style="color: blue;">Link</a>
+                </li>
+                <li>
+                    Calendar
+                    <br>
+                    <a href="https://github.com/labib10849/Calender" style="color: blue;">Link</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <p class="footer__title">My social media links</p>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/rakibul-hoda-labib-05314523a/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/labib10849" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+                <a href="https://www.facebook.com/rakibul.labib.5" target="_blank">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+            </a>
+            
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Rakibul Hoda Labib 
+                </span></p>
+
+    </footer>
+     
+</body> 
+</html>
